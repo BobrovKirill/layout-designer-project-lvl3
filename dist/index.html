@@ -9,23 +9,80 @@
   <body class="bg-secondary"></body>
   <div class="container-xxl pd-container vh-100">
     <div class="row h-100 w-100 mg-reset rounded-xl overflow-hidden">
-      <div class="col-4 pd-reset">
+      <section class="col-md-5 col-lg-4 col-12 pd-reset">
         <header>
-          <nav class="navbar bg-primary navbar-expand-lg"><img class="nav-logo-icon" src="./images/icons/logo.svg" alt="logo"/>
-            <div class="collapse navbar-collapse justify-content-center">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#"><img class="nav-icon" src="./images/icons/people.svg" alt="contats"/><span class="text-white small">Контакты</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><img class="nav-icon" src="./images/icons/chat.svg" alt="messages"/><span class="text-white small">Сообщения</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><img class="nav-icon" src="./images/icons/person.svg" alt="profile"/><span class="text-white small">Профель</span></a></li>
-              </ul>
-            </div>
+          <nav class="navbar bg-primary flex-nowrap justify-content-between"><img class="nav-logo-icon mr-4" src="./images/icons/logo.svg" alt="logo"/>
+            <div class="d-flex flex-wrap flex-nowrap justify-content-xl-around justify-content-end w-100"><a href="#"><img class="nav-icon mr-xl-0 mr-4" src="./images/icons/people.svg" alt="contats"/><span class="text-white small d-none d-xl-inline">Контакты</span></a><a href="#"><img class="nav-icon mr-xl-0 mr-4" src="./images/icons/chat.svg" alt="messages"/><span class="text-white small d-none d-xl-inline">Сообщения</span></a><a href="#"><img class="nav-icon" src="./images/icons/person.svg" alt="profile"/><span class="text-white small d-none d-xl-inline">Профель</span></a></div>
           </nav>
         </header>
         <main class="bg-white border-right h-100">
-          <div class="container"></div>
+          <div class="container pd-container contacts">
+            <h2 class="mb-3">Контакты</h2>
+            <form class="form-inline" action="#">
+              <input class="form-control w-100" type="text" id="find" placeholder="Поиск по контактам"/>
+            </form>
+            <div class="constact-list">
+              <div class="contact mt-5">
+                <h5 class="text-muted">A</h5><a class="card mt-3">
+                  <div class="card-body d-inline-flex align-items-center"><img class="card-img mr-3" src="/images/avatar_3.jpg"/>
+                    <div class="d-flex flex-column">
+                      <p class="card-title">Алексей Примадонин</p>
+                      <p class="small mg-reset">Онлайн</p>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="contact mt-5">
+                <h5 class="text-muted">В</h5><a class="card mt-3">
+                  <div class="card-body d-inline-flex align-items-center"><img class="card-img mr-3" src="/images/avatar_4.jpg"/>
+                    <div class="d-flex flex-column">
+                      <p class="card-title">Вениамин Редакторович</p>
+                      <p class="small mg-reset">Онлайн</p>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="contact mt-5">
+                <h5 class="text-muted">Д</h5><a class="card mt-3">
+                  <div class="card-body d-inline-flex align-items-center"><img class="card-img mr-3" src="/images/avatar_2.jpg"/>
+                    <div class="d-flex flex-column">
+                      <p class="card-title">Джедай Падаванов</p>
+                      <p class="small mg-reset">Был онлайн вчера</p>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="contact mt-5">
+                <h5 class="text-muted">К</h5><a class="card mt-3">
+                  <div class="card-body d-inline-flex align-items-center"><img class="card-img mr-3" src="/images/avatar_1.jpg"/>
+                    <div class="d-flex flex-column">
+                      <p class="card-title">Кодовёнок Хекслетович</p>
+                      <p class="small mg-reset">Был онлайн 3 часа назад</p>
+                    </div>
+                  </div></a><a class="card mt-3">
+                  <div class="card-body d-inline-flex align-items-center"><img class="card-img mr-3" src="/images/avatar_5.jpg"/>
+                    <div class="d-flex flex-column">
+                      <p class="card-title">Королева Верстальщина</p>
+                      <p class="small mg-reset">Была онлайн вчера</p>
+                    </div>
+                  </div></a>
+              </div>
+              <div class="contact mt-5">
+                <h5 class="text-muted">П</h5><a class="card mt-3">
+                  <div class="card-body d-inline-flex align-items-center"><img class="card-img mr-3" src="/images/avatar_6.jpg"/>
+                    <div class="d-flex flex-column">
+                      <p class="card-title">Питонист Джангович</p>
+                      <p class="small mg-reset">Был онлайн вчера</p>
+                    </div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
         </main>
-      </div>
-      <div class="col-8 pd-reset bg-white d-flex justify-content-center align-items-center"><img class="rounded-pill mb-3" src="../images/avatar_1.jpg" alt="chat"/></div>
+      </section>
+      <section class="col-md-7 col-lg-8 pd-reset bg-white d-none d-flex justify-content-center align-items-center">
+        <div class="text-center"><img class="rounded-pill mb-3" src="../images/avatar_1.jpg" alt="chat"/>
+          <h6 class="bold">Привет, Кодовёнок</h6>
+          <p class="small text-muted">Выбери чат, чтобы начать общаться</p>
+        </div>
+      </section>
     </div>
   </div>
 </html>

@@ -8,29 +8,15 @@ html(lang="ru-RU")
     body.bg-secondary
     .container-xxl.pd-container.vh-100
         .row.h-100.w-100.mg-reset.rounded-xl.overflow-hidden
-            .col-4.pd-reset
-                header
-                    nav.navbar.bg-primary.navbar-expand-lg
-                        img.nav-logo-icon(src="./images/icons/logo.svg", alt="logo")
-                        .collapse.navbar-collapse.justify-content-center
-                            ul.navbar-nav
-                                li.nav-item
-                                    a.nav-link(href="#")
-                                        img.nav-icon(src="./images/icons/people.svg", alt="contats")
-                                        span.text-white.small Контакты
-                                li.nav-item
-                                    a.nav-link(href="#")
-                                        img.nav-icon(src="./images/icons/chat.svg", alt="messages")
-                                        span.text-white.small Сообщения
-                                li.nav-item
-                                    a.nav-link(href="#")
-                                        img.nav-icon(src="./images/icons/person.svg", alt="profile")
-                                        span.text-white.small Профель
-                main.bg-white.border-right.h-100
-                    .container
-            .col-8.pd-reset.bg-white.d-flex.justify-content-center.align-items-center
-                img.rounded-pill.mb-3(src="../images/avatar_1.jpg", alt="chat")
-                
+            section.col-md-5.col-lg-4.col-12.pd-reset
+                include pugs/header
+                include pugs/contacts
+            section.col-md-7.col-lg-8.pd-reset.bg-white.d-none.d-flex.justify-content-center.align-items-center
+                .text-center
+                    img.rounded-pill.mb-3(src="../images/avatar_1.jpg", alt="chat")
+                    h6.bold Привет, Кодовёнок
+                    p.small.text-muted Выбери чат, чтобы начать общаться
+
 
 
 

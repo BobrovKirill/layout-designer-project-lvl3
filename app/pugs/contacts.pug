@@ -1,0 +1,53 @@
+-
+  var contacts = {
+    "A": [{
+      name: "Алексей Примадонин",
+      status: "Онлайн",
+      avatar: "/images/avatar_3.jpg"
+    }],
+
+    "В": [{
+      name: "Вениамин Редакторович",
+      status: "Онлайн",
+      avatar: "/images/avatar_4.jpg"
+    }],
+
+    "Д": [{
+      name: "Джедай Падаванов",
+      status: "Был онлайн вчера",
+      avatar: "/images/avatar_2.jpg"
+    }],
+
+    "К": [{
+      name: "Кодовёнок Хекслетович",
+      status: "Был онлайн 3 часа назад",
+      avatar: "/images/avatar_1.jpg"
+    },
+    {
+      name: "Королева Верстальщина",
+      status: "Была онлайн вчера",
+      avatar: "/images/avatar_5.jpg"
+    }],
+
+    "П": [{
+      name: "Питонист Джангович",
+      status: "Был онлайн вчера",
+      avatar: "/images/avatar_6.jpg"
+    }],
+  }
+main.bg-white.border-right.h-100
+    .container.pd-container.contacts
+        h2.mb-3 Контакты
+        form.form-inline(action="#")
+            input.form-control.w-100(type="text" id="find"  placeholder="Поиск по контактам")
+        .constact-list
+            for contact, name in contacts
+                .contact.mt-5
+                    h5.text-muted=name
+                    for data in contact
+                        a.card.mt-3
+                            .card-body.d-inline-flex.align-items-center
+                                img.card-img.mr-3(src=data.avatar)
+                                .d-flex.flex-column
+                                    p.card-title=data.name
+                                    p.small.mg-reset=data.status
