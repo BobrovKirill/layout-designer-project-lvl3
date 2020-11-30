@@ -13,9 +13,9 @@ let path = {
     fonts: projectFolder + '/fonts/',
   },
   src: {
-    pug: sourceFolder + '/index.pug',
+    pug: sourceFolder + '/**/*.pug',
     css: sourceFolder + '/scss/app.scss',
-    js: sourceFolder + '/js/',
+    js:  sourceFolder + '/js/index.js',
     img: sourceFolder + '/images/**/*.{jpg,png,svg,gif,ico}',
     fonts: sourceFolder + '/fonts/*.ttf',
   },
@@ -35,6 +35,7 @@ let { src, dest } = require('gulp'),
   del = require('del');
   pug =  require('gulp-pug');
   imagemin = require('gulp-imagemin');
+  concat = require('gulp-concat');
  
 function img(){
     return gulp.src(path.src.img)
@@ -79,9 +80,15 @@ function clean(params) {
   return del(path.clean);
 }
 
-let build = gulp.series(clean, img, gulp.parallel(pugToHtml, css));
+function Js(params){
+  return gulp.src(path.src.js)
+      .pipe(gulp.dest(path.build.js))
+}
+
+let build = gulp.series(clean, gulp.parallel(pugToHtml, css, Js, img));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.Js = Js;
 exports.img = img;
 exports.pugToHtml = pugToHtml;
 exports.css = css;

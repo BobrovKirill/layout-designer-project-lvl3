@@ -1,0 +1,40 @@
+-
+  var contacts = {
+    "A": [{
+      name: "Вениамин Редакторович",
+      status: "o_O",
+      avatar: "/images/avatar_4.jpg",
+      time: "11:45"
+    }],
+
+    "В": [{
+      name: "Джедай Падаванов",
+      status: "Привет, скоро третий проект? Уже скоро надо...",
+      avatar: "/images/avatar_2.jpg",
+      time: "10:12"
+    }],
+
+    "Д": [{
+      name: "Алексей Примадонин",
+      status: "Тесты упали >_<",
+      avatar: "/images/avatar_3.jpg",
+      time: "08:53"
+    }],
+  }
+
+#nav-messages.container.pd-container.contacts.tab-pane.fade(role="tabpanel" aria-labelledby="nav-messages-tab")
+    h2.mb-3 Чаты
+    form.form-inline(action="#")
+        input.form-control.w-100(type="text" id="find"  placeholder="Поиск по сообщениям")
+    .constact-list.mt-5
+        for contact, name in contacts
+            .contact.mt-3
+                for data in contact
+                    a.card
+                        .card-body.d-inline-flex.align-items-center
+                            img.card-img.mr-3(src=data.avatar)
+                            .d-flex.flex-column.w-100
+                                .d-flex.justify-content-between
+                                    p.card-title=data.name
+                                    p.small=data.time
+                                p.small.mg-reset=data.status

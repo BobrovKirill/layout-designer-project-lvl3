@@ -1,13 +1,13 @@
-header
+header.order-sm-0.order-1
     nav.navbar.bg-primary.flex-nowrap.justify-content-between
         img.nav-logo-icon.mr-4(src="./images/icons/logo.svg", alt="logo")
-        .d-flex.flex-wrap.flex-nowrap.justify-content-xl-around.justify-content-end.w-100
-            a(href="#")
-                img.nav-icon.mr-xl-0.mr-4(src="./images/icons/people.svg", alt="contats")
+        #nav-tab.d-flex.flex-wrap.flex-nowrap.justify-content-xl-around.justify-content-end.w-100(role="tablist")
+            a#nav-contact-tab(href="#nav-contact" data-toggle="tab" role="tab" aria-controls="nav-contact" aria-selected="true")
+                img.nav-icon.mr-xl-1.mr-4(src="./images/icons/people.svg", alt="contats")
                 span.text-white.small.d-none.d-xl-inline Контакты
-            a(href="#")
-                img.nav-icon.mr-xl-0.mr-4(src="./images/icons/chat.svg", alt="messages")
+            a#nav-messages-tab(href="#nav-messages" data-toggle="tab" role="tab" aria-controls="nav-messages" aria-selected="false")
+                img.nav-icon.mr-xl-1.mr-4(src="./images/icons/chat.svg", alt="messages")
                 span.text-white.small.d-none.d-xl-inline Сообщения
-            a(href="#")
+            a#nav-profile-tab(href="#nav-profile" data-toggle="tab" role="tab" aria-controls="nav-profile" aria-selected="false")
                 img.nav-icon(src="./images/icons/person.svg", alt="profile")
                 span.text-white.small.d-none.d-xl-inline Профель
