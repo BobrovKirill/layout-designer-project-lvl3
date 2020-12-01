@@ -47,6 +47,10 @@ nav {
   }
 };
 
+.scrollbar {
+  @include hide-scrollbar();
+}
+
 .card {
   color: black;
   &:hover {
@@ -59,4 +63,8 @@ nav {
 .card-img {
 width: 50px;
 height: 50px;
+}
+
+.main-height {
+  height: calc(100vh - (72px + 2 * 3rem));;
 }

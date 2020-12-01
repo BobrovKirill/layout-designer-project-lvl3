@@ -10,15 +10,15 @@
     <title>Hexlet</title>
   </head>
   <body class="bg-secondary">
-    <div class="container-xxl pd-container vh-100">
-      <div class="row h-100 w-100 mg-reset rounded-xl overflow-hidden">
+    <div class="container-xxl pd-container">
+      <div class="row w-100 mg-reset rounded-xl overflow-hidden">
         <section class="col-md-5 col-lg-4 col-12 pd-reset d-flex flex-column">
-          <header class="order-sm-0 order-1">
+          <header class="order-md-0 order-1">
             <nav class="navbar bg-primary flex-nowrap justify-content-between"><img class="nav-logo-icon mr-4" src="./images/icons/logo.svg" alt="logo"/>
-              <div class="d-flex flex-wrap flex-nowrap justify-content-xl-around justify-content-end w-100" id="nav-tab" role="tablist"><a id="nav-contact-tab" href="#nav-contact" data-toggle="tab" role="tab" aria-controls="nav-contact" aria-selected="true"><img class="nav-icon mr-xl-1 mr-4" src="./images/icons/people.svg" alt="contats"/><span class="text-white small d-none d-xl-inline">Контакты</span></a><a id="nav-messages-tab" href="#nav-messages" data-toggle="tab" role="tab" aria-controls="nav-messages" aria-selected="false"><img class="nav-icon mr-xl-1 mr-4" src="./images/icons/chat.svg" alt="messages"/><span class="text-white small d-none d-xl-inline">Сообщения</span></a><a id="nav-profile-tab" href="#nav-profile" data-toggle="tab" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="nav-icon" src="./images/icons/person.svg" alt="profile"/><span class="text-white small d-none d-xl-inline">Профель</span></a></div>
+              <div class="d-flex flex-wrap flex-nowrap justify-content-xl-around justify-content-end w-100" id="nav-tab" role="tablist"><a id="nav-contact-tab" href="#nav-contact" data-toggle="tab" role="tab" aria-controls="nav-contact" aria-selected="true"><img class="nav-icon mr-xl-1 mr-4" src="./images/icons/people.svg" alt="contats"/><span class="text-white small d-none d-xl-inline">Контакты</span></a><a id="nav-messages-tab" href="#nav-messages" data-toggle="tab" role="tab" aria-controls="nav-messages" aria-selected="false"><img class="nav-icon mr-xl-1 mr-4" src="./images/icons/chat.svg" alt="messages"/><span class="text-white small d-none d-xl-inline">Сообщения</span></a><a id="nav-profile-tab" href="#nav-profile" data-toggle="tab" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="nav-icon" src="./images/icons/person.svg" alt="profile"/><span class="text-white small d-none d-xl-inline">Профиль</span></a></div>
             </nav>
           </header>
-          <main class="tab-content bg-white border-right h-100" id="nav-tabContent">
+          <main class="tab-content bg-white border-right main-height scrollbar" id="nav-tabContent">
             <div class="container pd-container contacts tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
               <h2 class="mb-3">Контакты</h2>
               <form class="form-inline" action="#">
@@ -120,7 +120,7 @@
               </div>
             </div>
             <div class="container pd-container contacts tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <h2 class="mb-3">Профиль</h2>
+              <h2 class="mb-3">Профель</h2>
               <form class="form-inline" action="#">
                 <input class="form-control w-100" type="text" id="find" placeholder="Поиск по сообщениям"/>
               </form>
@@ -171,7 +171,7 @@
             </div>
           </main>
         </section>
-        <section class="col-md-7 col-lg-8 pd-reset bg-white d-none d-flex justify-content-center align-items-center">
+        <section class="col-md-7 col-lg-8 pd-reset bg-white d-none d-md-flex justify-content-center align-items-center">
           <div class="text-center"><img class="rounded-pill mb-3" src="../images/avatar_1.jpg" alt="chat"/>
             <h6 class="bold">Привет, Кодовёнок</h6>
             <p class="small text-muted">Выбери чат, чтобы начать общаться</p>
