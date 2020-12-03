@@ -1,42 +1,47 @@
 
-<div class="container pd-container contacts tab-pane fade" id="nav-messages" role="tabpanel" aria-labelledby="nav-messages-tab">
-  <h2 class="mb-3">Чаты</h2>
-  <form class="form-inline" action="#">
-    <input class="form-control w-100" type="text" id="find" placeholder="Поиск по сообщениям"/>
-  </form>
-  <div class="constact-list mt-5">
-    <div class="contact mt-3"><a class="card">
-        <div class="card-body d-inline-flex align-items-center"><img class="card-img mr-3" src="/images/avatar_4.jpg"/>
-          <div class="d-flex flex-column w-100">
-            <div class="d-flex justify-content-between">
-              <p class="card-title">Вениамин Редакторович</p>
-              <p class="small">11:45</p>
-            </div>
-            <p class="small mg-reset">o_O</p>
-          </div>
-        </div></a>
+<div class="container scrollbar chat-height">
+  <div class="pd-container">
+    <div class="d-flex align-items-start mb-3">
+      <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px"/>
+        <div class="card card-body rounded-xl">
+          <p class="card-title">Вениамин Редакторович</p>
+          <p class="cardt-text text-muted">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в     магазин. Тебе что-то захватить?</p>
+          <p class="small text-muted mg-reset">8 минут назад</p>
+        </div>
+      </div>
     </div>
-    <div class="contact mt-3"><a class="card">
-        <div class="card-body d-inline-flex align-items-center"><img class="card-img mr-3" src="/images/avatar_2.jpg"/>
-          <div class="d-flex flex-column w-100">
-            <div class="d-flex justify-content-between">
-              <p class="card-title">Джедай Падаванов</p>
-              <p class="small">10:12</p>
-            </div>
-            <p class="small mg-reset">Привет, скоро третий проект? Уже скоро надо...</p>
-          </div>
-        </div></a>
+    <div class="d-flex justify-content-end">
+      <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px"/>
+        <div class="card card-body rounded-xl bg-primary text-light">
+          <p class="card-text">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
+          <p class="small mg-reset border-top pt-1">5 минут назад</p>
+        </div>
+      </div>
     </div>
-    <div class="contact mt-3"><a class="card">
-        <div class="card-body d-inline-flex align-items-center"><img class="card-img mr-3" src="/images/avatar_3.jpg"/>
-          <div class="d-flex flex-column w-100">
-            <div class="d-flex justify-content-between">
-              <p class="card-title">Алексей Примадонин</p>
-              <p class="small">08:53</p>
-            </div>
-            <p class="small mg-reset">Тесты упали &gt;_&lt;</p>
-          </div>
-        </div></a>
+  </div>
+  <div class="pd-container d-flex flex-column">
+    <div class="d-flex align-items-start mb-3 order-1">
+      <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px"/>
+        <div class="card card-body rounded-xl">
+          <p class="card-title">Вениамин Редакторович</p>
+          <p class="cardt-text text-muted">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</p>
+          <p class="small text-muted mg-reset">3 минут назад</p>
+        </div>
+      </div>
     </div>
+    <div class="d-flex justify-content-end order-0 mb-3">
+      <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px"/>
+        <div class="card card-body rounded-xl bg-primary text-light">
+          <p class="card-text">O_o</p>
+          <p class="small mg-reset border-top pt-1">Только что</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center border-top">
+    <p class="text-muted">Напишите сообщение...</p>
+    <div class="rounded-pill bg-primary my-3 w-h-50 d-flex justify-content-center align-items-center"><img class="invert-color" src="./images/icons/cursor.svg" alt="cursor" width="20" height="20"/></div>
   </div>
 </div>

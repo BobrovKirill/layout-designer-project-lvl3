@@ -3,36 +3,36 @@
     "A": [{
       name: "Алексей Примадонин",
       status: "Онлайн",
-      avatar: "/images/avatar_3.jpg"
+      avatar: "./images/avatar_3.jpg"
     }],
 
     "В": [{
       name: "Вениамин Редакторович",
       status: "Онлайн",
-      avatar: "/images/avatar_4.jpg"
+      avatar: "./images/avatar_4.jpg"
     }],
 
     "Д": [{
       name: "Джедай Падаванов",
       status: "Был онлайн вчера",
-      avatar: "/images/avatar_2.jpg"
+      avatar: "./images/avatar_2.jpg"
     }],
 
     "К": [{
       name: "Кодовёнок Хекслетович",
       status: "Был онлайн 3 часа назад",
-      avatar: "/images/avatar_1.jpg"
+      avatar: "./images/avatar_1.jpg"
     },
     {
       name: "Королева Верстальщина",
       status: "Была онлайн вчера",
-      avatar: "/images/avatar_5.jpg"
+      avatar: "./images/avatar_5.jpg"
     }],
 
     "П": [{
       name: "Питонист Джангович",
       status: "Был онлайн вчера",
-      avatar: "/images/avatar_6.jpg"
+      avatar: "./images/avatar_6.jpg"
     }],
   }
 
@@ -47,7 +47,7 @@
                 for data in contact
                     a.card.mt-3
                         .card-body.d-inline-flex.align-items-center
-                            img.card-img.mr-3(src=data.avatar)
+                            img.mr-3(src=data.avatar alt='avatar' height='50px' width='50px')
                             .d-flex.flex-column
                                 p.card-title=data.name
-                                p.small.mg-reset=data.status
+                                p.small.text-muted.mg-reset=data.status

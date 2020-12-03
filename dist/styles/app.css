@@ -7743,18 +7743,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 nav {
-  height: 72px; }
-
-.nav-icon {
-  width: 25px;
-  height: 25px;
-  margin-right: 8px;
-  filter: invert(1); }
-
-.nav-logo-icon {
-  width: 15px;
-  height: 25px;
-  filter: invert(1); }
+  height: 75px; }
 
 .pd-reset {
   padding: 0; }
@@ -7787,9 +7776,21 @@ nav {
     color: white;
     text-decoration: none; }
 
-.card-img {
+.main-height {
+  height: calc(100vh - (75px + 2 * 3rem)); }
+
+.chat-height {
+  height: calc(100vh - (91px + 87px + 2 * 3rem)); }
+
+.header-chat {
+  height: 91px; }
+
+.message-width {
+  width: calc(100% - (2 * 5rem)); }
+
+.w-h-50 {
   width: 50px;
   height: 50px; }
 
-.main-height {
-  height: calc(100vh - (72px + 2 * 3rem)); }
+.invert-color {
+  filter: invert(1); }

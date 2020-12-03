@@ -1,0 +1,13 @@
+-
+  var contacts = {
+      name: "Вениамин Редакторович",
+      status: "Онлайн",
+      avatar: "./images/avatar_4.jpg",
+  }
+
+header.header-chat.d-flex.justify-content-start.align-items-center.border-bottom.w-100
+    .d-flex.flex-row
+        img.card-img.mr-3(src=contacts.avatar)
+        .d-flex.flex-column
+            p.card-title.mb-1=contacts.name
+            p.small.text-muted.mg-reset=contacts.status

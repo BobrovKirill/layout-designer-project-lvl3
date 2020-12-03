@@ -1,40 +1,53 @@
--
-  var contacts = {
-    "A": [{
-      name: "Вениамин Редакторович",
-      status: "o_O",
-      avatar: "/images/avatar_4.jpg",
-      time: "11:45"
-    }],
+- var  name = 'Вениамин Редакторович'
+- var avatar = './images/avatar_4.jpg'
+- var avatarAutor = './images/avatar_1.jpg'
+- 
+    var messages = {
+     2: [{
+         text: '',
+         status: '5 минут назад'
+     }],
+     3: [{
+         text: 'А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие',
+         status: '3 минуты назад'
+     }],
+     4: [{
+         text: 'о_О',
+         status: ''
+     }],
+ }
 
-    "В": [{
-      name: "Джедай Падаванов",
-      status: "Привет, скоро третий проект? Уже скоро надо...",
-      avatar: "/images/avatar_2.jpg",
-      time: "10:12"
-    }],
-
-    "Д": [{
-      name: "Алексей Примадонин",
-      status: "Тесты упали >_<",
-      avatar: "/images/avatar_3.jpg",
-      time: "08:53"
-    }],
-  }
-
-#nav-messages.container.pd-container.contacts.tab-pane.fade(role="tabpanel" aria-labelledby="nav-messages-tab")
-    h2.mb-3 Чаты
-    form.form-inline(action="#")
-        input.form-control.w-100(type="text" id="find"  placeholder="Поиск по сообщениям")
-    .constact-list.mt-5
-        for contact, name in contacts
-            .contact.mt-3
-                for data in contact
-                    a.card
-                        .card-body.d-inline-flex.align-items-center
-                            img.card-img.mr-3(src=data.avatar)
-                            .d-flex.flex-column.w-100
-                                .d-flex.justify-content-between
-                                    p.card-title=data.name
-                                    p.small=data.time
-                                p.small.mg-reset=data.status
+.container.scrollbar.chat-height
+    .pd-container
+        .d-flex.align-items-start.mb-3
+            .message-width.d-flex.align-items-end
+                img.rounded-pill.mr-3(src=avatar, alt="avatar" width='50px' height='50px')
+                .card.card-body.rounded-xl
+                    p.card-title=name
+                    p.cardt-text.text-muted Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в     магазин. Тебе что-то захватить?
+                    p.small.text-muted.mg-reset 8 минут назад
+        .d-flex.justify-content-end
+            .message-width.d-flex.align-items-end
+                img.rounded-pill.mr-3(src=avatarAutor, alt="avatar" width='50px' height='50px')
+                .card.card-body.rounded-xl.bg-primary.text-light
+                    p.card-text Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
+                    p.small.mg-reset.border-top.pt-1 5 минут назад
+    .pd-container.d-flex.flex-column
+        .d-flex.align-items-start.mb-3.order-1
+            .message-width.d-flex.align-items-end
+                img.rounded-pill.mr-3(src=avatar, alt="avatar" width='50px' height='50px')
+                .card.card-body.rounded-xl
+                    p.card-title=name
+                    p.cardt-text.text-muted А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
+                    p.small.text-muted.mg-reset 3 минут назад
+        .d-flex.justify-content-end.order-0.mb-3
+            .message-width.d-flex.align-items-end
+                img.rounded-pill.mr-3(src=avatarAutor, alt="avatar" width='50px' height='50px')
+                .card.card-body.rounded-xl.bg-primary.text-light
+                    p.card-text O_o
+                    p.small.mg-reset.border-top.pt-1 Только что
+.container
+    .d-flex.justify-content-between.align-items-center.border-top
+        p.text-muted Напишите сообщение...
+        .rounded-pill.bg-primary.my-3.w-h-50.d-flex.justify-content-center.align-items-center
+            img.invert-color(src="./images/icons/cursor.svg", alt="cursor" width='20' height='20')
