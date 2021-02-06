@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<DOCTYPE>html</DOCTYPE>
 <html lang="ru-RU">
   <head>
     <meta charset="UTF-8"/>
@@ -12,7 +13,7 @@
   <body class="bg-secondary">
     <div class="container-xxl pd-container">
       <div class="row w-100 mg-reset rounded-xl overflow-hidden">
-        <section class="col-md-5 col-lg-4 col-12 pd-reset d-flex flex-column">
+        <section class="col-md-5 col-lg-4 col-12 pd-reset">
           <header class="order-md-0 order-1">
             <nav class="navbar bg-primary flex-nowrap justify-content-between"><img class="mr-4 invert-color" src="./images/icons/logo.svg" alt="logo" width="15px" height="25px"/>
               <div class="d-flex flex-wrap flex-nowrap justify-content-xl-around justify-content-end w-100" id="nav-tab" role="tablist"><a id="nav-contact-tab" href="#nav-contact" data-toggle="tab" role="tab" aria-controls="nav-contact" aria-selected="true"><img class="mr-2 mr-xl-1 mr-4 invert-color" src="./images/icons/people.svg" alt="contats" width="25px" height="25px"/><span class="text-white small d-none d-xl-inline">Контакты</span></a><a id="nav-messages-tab" href="#nav-messages" data-toggle="tab" role="tab" aria-controls="nav-messages" aria-selected="false"><img class="mr-2 mr-xl-1 mr-4 invert-color" src="./images/icons/chat.svg" alt="messages" width="25px" height="25px"/><span class="text-white small d-none d-xl-inline">Сообщения</span></a><a id="nav-profile-tab" href="#nav-profile" data-toggle="tab" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="mr-2 invert-color" src="./images/icons/person.svg" alt="profile" width="25px" height="25px"/><span class="text-white small d-none d-xl-inline">Профиль</span></a></div>
@@ -85,8 +86,8 @@
               </form>
               <div class="constact-list mt-5">
                 <div class="contact mt-3"><a class="card">
-                    <div class="card-body d-inline-flex align-items-center"><img class="mr-3" src="/images/avatar_4.jpg" alt="avatar" height="50px" width="50px"/>
-                      <div class="d-flex flex-column w-100">
+                    <div class="card-body d-inline-flex align-items-center"><img class="mr-3" src="./images/avatar_4.jpg" alt="avatar" height="50px" width="50px"/>
+                      <div class="d-flex flex-column w-100 text-truncate">
                         <div class="d-flex justify-content-between">
                           <p class="card-title">Вениамин Редакторович</p>
                           <p class="small text-muted">11:45</p>
@@ -96,19 +97,19 @@
                     </div></a>
                 </div>
                 <div class="contact mt-3"><a class="card">
-                    <div class="card-body d-inline-flex align-items-center"><img class="mr-3" src="/images/avatar_2.jpg" alt="avatar" height="50px" width="50px"/>
-                      <div class="d-flex flex-column w-100">
+                    <div class="card-body d-inline-flex align-items-center"><img class="mr-3" src="./images/avatar_2.jpg" alt="avatar" height="50px" width="50px"/>
+                      <div class="d-flex flex-column w-100 text-truncate">
                         <div class="d-flex justify-content-between">
                           <p class="card-title">Джедай Падаванов</p>
                           <p class="small text-muted">10:12</p>
                         </div>
-                        <p class="small text-muted mg-reset">Привет, скоро третий проект? Уже скоро надо...</p>
+                        <p class="small text-muted mg-reset">Привет, скоро третий проект? Уже скоро надо будет выложить</p>
                       </div>
                     </div></a>
                 </div>
                 <div class="contact mt-3"><a class="card">
-                    <div class="card-body d-inline-flex align-items-center"><img class="mr-3" src="/images/avatar_3.jpg" alt="avatar" height="50px" width="50px"/>
-                      <div class="d-flex flex-column w-100">
+                    <div class="card-body d-inline-flex align-items-center"><img class="mr-3" src="./images/avatar_3.jpg" alt="avatar" height="50px" width="50px"/>
+                      <div class="d-flex flex-column w-100 text-truncate">
                         <div class="d-flex justify-content-between">
                           <p class="card-title">Алексей Примадонин</p>
                           <p class="small text-muted">08:53</p>
@@ -125,7 +126,7 @@
                 <input class="form-control w-100" type="text" id="find" placeholder="Поиск по сообщениям"/>
               </form>
               <div class="card mt-5 border-0">
-                <div class="card-body text-center"><img class="rounded-pill mb-3" src="../images/avatar_1.jpg" alt="info-avatar" width="90" height="90"/>
+                <div class="card-body text-center"><img class="rounded-pill mb-3" src="./images/avatar_1.jpg" alt="info-avatar" width="90" height="90"/>
                   <p class="card-title mb-3">Кодовёнок Хекслетович</p>
                   <p class="small text-muted mb-5">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
                 </div>
@@ -170,10 +171,12 @@
               </div>
             </div>
           </main>
+          <!--section.bg-white.border-right.main-height.scrollbar.d-md-none-->
+          <!--    include pugs/chats-->
         </section>
-        <section class="col-md-7 col-lg-8 pd-reset bg-white d-none d-md-flex flex-column">
+        <section class="col-md-7 col-lg-8 pd-reset bg-white d-none d-md-flex flex-column d-none">
           <header class="header-chat d-flex justify-content-start align-items-center border-bottom w-100">
-            <div class="d-flex flex-row"><img class="card-img mr-3" src="./images/avatar_4.jpg"/>
+            <div class="d-flex flex-row"><img class="mr-3" src="./images/avatar_4.jpg" alt="avatar" height="50px" width="50px"/>
               <div class="d-flex flex-column">
                 <p class="card-title mb-1">Вениамин Редакторович</p>
                 <p class="small text-muted mg-reset">Онлайн</p>
@@ -183,7 +186,7 @@
           <div class="container scrollbar chat-height">
             <div class="pd-container">
               <div class="d-flex align-items-start mb-3">
-                <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px"/>
+                <div class="message-width w-md-100 d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px"/>
                   <div class="card card-body rounded-xl">
                     <p class="card-title">Вениамин Редакторович</p>
                     <p class="cardt-text text-muted">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в     магазин. Тебе что-то захватить?</p>
