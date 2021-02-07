@@ -1,20 +1,15 @@
-DOCTYPE html
-html(lang="ru-RU")
-    include pugs/head
-    body.bg-secondary
-        .container-xxl.pd-container
-            .row.w-100.mg-reset.rounded-xl.overflow-hidden
-                section.col-md-5.col-lg-4.col-12.pd-reset
-                    header.order-md-0.order-1
-                        include pugs/header
-                    main#nav-tabContent.tab-content.bg-white.border-right.main-height.scrollbar
-                        include pugs/contacts
-                        include pugs/messages
-                        include pugs/profile
-                    //section.bg-white.border-right.main-height.scrollbar.d-md-none
-                    //    include pugs/chats
-                section.col-md-7.col-lg-8.pd-reset.bg-white.d-none.d-md-flex.flex-column.d-none
-                    include pugs/header-chat
-                    include pugs/chats
-    script(src="js/index.js")
+doctype html
+html(lang="ru")
+    include pugs/head.pug
+    body.bg-secondary.container-xxl.pd-container
+        .row.w-100.mg-reset.rounded-xl.overflow-hidden
+            section.col-md-5.col-lg-4.col-12.pd-reset
+                header.order-md-0.order-1
+                    include pugs/header-left-chat
+                main#nav-tabContent.tab-content.bg-white.border-right.main-height.scrollbar
+                    include pugs/left-chat.pug
+                    include pugs/contacts.pug
+                    include pugs/messages.pug
+                    include pugs/profile.pug
+                include pugs/rigth-chat.pug
 

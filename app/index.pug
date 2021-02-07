@@ -1,22 +1,18 @@
-DOCTYPE html
-html(lang="ru-RU")
-    include pugs/head
-    body.bg-secondary
-        .container-xxl.pd-container
-            .row.w-100.mg-reset.rounded-xl.overflow-hidden
-                section.col-md-5.col-lg-4.col-12.pd-reset.d-flex.flex-column
-                    header.order-md-0.order-1
-                        include pugs/header
-                    main#nav-tabContent.tab-content.bg-white.border-right.main-height.scrollbar
-                        include pugs/contacts
-                        include pugs/messages
-                        include pugs/profile
-                section.col-md-7.col-lg-8.pd-reset.bg-white.d-none.d-md-flex.justify-content-center.align-items-center
-                    .text-center
-                        img.rounded-pill.mb-3(src="./images/avatar_1.jpg", alt="chat")
-                        h6.bold Привет, Кодовёнок
-                        p.small.text-muted Выбери чат, чтобы начать общаться
-    script(src="js/index.js")
+doctype html
+html(lang="ru")
+    include pugs/head.pug
+    body.bg-secondary.container-xxl.pd-container
+        .row.w-100.mg-reset.rounded-xl.overflow-hidden
+            section.col-md-5.col-lg-4.col-12.pd-reset.d-flex.flex-column
+                header.order-md-0.order-1
+                    include pugs/header.pug
+                main#nav-tabContent.tab-content.bg-white.border-right.main-height.scrollbar
+                    include pugs/contacts.pug
+                    include pugs/messages.pug
+                    include pugs/profile.pug
+            section.col-md-7.col-lg-8.pd-reset.bg-white.d-none.d-md-flex.justify-content-center.align-items-center
+                include pugs/welcome.pug
+    
 
 
 
