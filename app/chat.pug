@@ -1,11 +1,12 @@
 doctype html
 html(lang="ru")
-    include pugs/head.pug
+    head
+        - var page = 'chat'
+        include pugs/head.pug
     body.bg-secondary.container-xxl.pd-container
         .row.w-100.mg-reset.rounded-xl.overflow-hidden
             section.col-md-5.col-lg-4.col-12.pd-reset.d-flex.flex-column
-                header.order-md-0.order-1
-                    include pugs/header-left-chat
+                include pugs/header.pug
                 main#nav-tabContent.tab-content.bg-white.border-right.main-height.scrollbar
                     include pugs/left-chat.pug
                     include pugs/contacts.pug

@@ -1,11 +1,11 @@
 doctype html
 html(lang="ru")
-    include pugs/head.pug
+    head
+        include pugs/head.pug
     body.bg-secondary.container-xxl.pd-container
         .row.w-100.mg-reset.rounded-xl.overflow-hidden
             section.col-md-5.col-lg-4.col-12.pd-reset.d-flex.flex-column
-                header.order-md-0.order-1
-                    include pugs/header.pug
+                include pugs/header.pug
                 main#nav-tabContent.tab-content.bg-white.border-right.main-height.scrollbar
                     include pugs/contacts.pug
                     include pugs/messages.pug
