@@ -12,14 +12,14 @@
   </head>
   <body class="bg-secondary container-xxl pd-container">
     <div class="row w-100 mg-reset rounded-xl overflow-hidden">
-      <section class="col-md-5 col-lg-4 col-12 pd-reset">
+      <section class="col-md-5 col-lg-4 col-12 pd-reset d-flex flex-column">
         <header class="order-md-0 order-1">
           <nav class="navbar bg-primary flex-nowrap justify-content-between"><img class="mr-4 invert-color" src="./images/icons/logo.svg" alt="logo" width="15px" height="25px">
             <div class="d-flex flex-wrap flex-nowrap justify-content-xl-around justify-content-end w-100" id="nav-tab" role="tablist"><a class="mr-4 d-inline d-md-none" id="nav-chat-tab" href="#nav-chat" data-toggle="tab" role="tab" aria-controls="nav-chat" aria-selected="false"><img class="mr-2 invert-color" src="./images/icons/chat-left-text.svg" alt="chat" width="25px" height="25px"></a><a id="nav-contact-tab" href="#nav-contact" data-toggle="tab" role="tab" aria-controls="nav-contact" aria-selected="true"><img class="mr-2 mr-xl-1 mr-4 invert-color" src="./images/icons/people.svg" alt="contats" width="25px" height="25px"><span class="text-white small d-none d-xl-inline">Контакты</span></a><a id="nav-messages-tab" href="#nav-messages" data-toggle="tab" role="tab" aria-controls="nav-messages" aria-selected="false"><img class="mr-2 mr-xl-1 mr-4 invert-color" src="./images/icons/chat.svg" alt="messages" width="25px" height="25px"><span class="text-white small d-none d-xl-inline">Сообщения</span></a><a id="nav-profile-tab" href="#nav-profile" data-toggle="tab" role="tab" aria-controls="nav-profile" aria-selected="false"><img class="mr-2 invert-color" src="./images/icons/person.svg" alt="profile" width="25px" height="25px"><span class="text-white small d-none d-xl-inline">Профиль</span></a></div>
           </nav>
         </header>
         <main class="tab-content bg-white border-right main-height scrollbar" id="nav-tabContent">
-          <section class="container pd-container contacts tab-pane tab-pane fade" id="nav-chat" role="tabpanel" aria-labelledby="nav-chat-tab">
+          <section class="contacts tab-pane tab-pane fade" id="nav-chat" role="tabpanel" aria-labelledby="nav-chat-tab">
             <header class="header-chat d-flex justify-content-start align-items-center border-bottom w-100">
               <div class="d-flex flex-row"><img class="mr-3" src="./images/avatar_4.jpg" alt="avatar" height="50px" width="50px">
                 <div class="d-flex flex-column">
@@ -28,19 +28,19 @@
                 </div>
               </div>
             </header>
-            <div class="container scrollbar chat-height">
+            <div class="scrollbar chat-height">
               <div class="pd-container">
                 <div class="d-flex align-items-start mb-3">
-                  <div class="message-width w-md-100 d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px">
+                  <div class="d-flex align-items-end message-width"><img class="d-none d-md-block rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px">
                     <div class="card card-body rounded-xl">
-                      <p class="card-title">Вениамин Редакторович</p>
-                      <p class="cardt-text text-muted">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае ипотом   в     магазин. Тебе что-то захватить?</p>
+                      <p class="card-title font-weight-bold">Вениамин Редакторович</p>
+                      <p class="cardt-text text-muted">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае ипотом в         магазин. Тебе что-то захватить?</p>
                       <p class="small text-muted mg-reset">8 минут назад</p>
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-end">
-                  <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px">
+                <div class="d-flex justify-content-xl-end">
+                  <div class="d-flex align-items-end message-width"><img class="d-none d-md-block rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px">
                     <div class="card card-body rounded-xl bg-primary text-light">
                       <p class="card-text">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
                       <p class="small mg-reset border-top pt-1">5 минут назад</p>
@@ -48,30 +48,32 @@
                   </div>
                 </div>
               </div>
-              <div class="pd-container d-flex flex-column">
-                <div class="d-flex align-items-start mb-3 order-1">
-                  <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px">
-                    <div class="card card-body rounded-xl">
-                      <p class="card-title">Вениамин Редакторович</p>
-                      <p class="cardt-text text-muted">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, атам    это условие</p>
-                      <p class="small text-muted mg-reset">3 минут назад</p>
+              <div class="pd-container">
+                <div class="d-flex justify-content-xl-end mb-3">
+                  <div class="message-width d-flex align-items-end"><img class="d-none d-md-block rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px">
+                    <div class="card card-body rounded-xl bg-primary text-light">
+                      <p class="card-text">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, атам    это условие</p>
+                      <p class="small mg-reset border-top pt-1">3 минут назад</p>
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-end order-0 mb-3">
-                  <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px">
-                    <div class="card card-body rounded-xl bg-primary text-light">
-                      <p class="card-text">O_o</p>
-                      <p class="small mg-reset border-top pt-1">Только что</p>
+                <div class="d-flex align-items-start mb-3">
+                  <div class="message-width d-flex align-items-end"><img class="d-none d-md-block rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px">
+                    <div class="card card-body rounded-xl">
+                      <p class="card-title font-weight-bold">Вениамин Редакторович</p>
+                      <p class="cardt-text text-muted">O_O</p>
+                      <p class="small text-muted mg-reset">Только что</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="container">
-              <div class="d-flex justify-content-between align-items-center border-top">
-                <p class="text-muted">Напишите сообщение...</p>
-                <div class="rounded-pill bg-primary my-3 w-h-50 d-flex justify-content-center align-items-center"><img class="invert-color" src="./images/icons/cursor.svg" alt="cursor" width="20" height="20"></div>
+            <div class="position-relative footer-left-chat">
+              <div class="container">
+                <div class="d-flex justify-content-between align-items-center border-top">
+                  <p class="text-muted">Напишите сообщение...</p>
+                  <div class="rounded-pill bg-primary my-3 w-h-50 d-flex justify-content-center align-items-center"><img class="invert-color" src="./images/icons/cursor.svg" alt="cursor" width="20" height="20"></div>
+                </div>
               </div>
             </div>
           </section>
@@ -226,62 +228,62 @@
             </div>
           </div>
         </main>
-        <section class="col-md-7 col-lg-8 pd-reset bg-white d-none d-md-flex flex-column">
-          <header class="header-chat d-flex justify-content-start align-items-center border-bottom w-100">
-            <div class="d-flex flex-row"><img class="mr-3" src="./images/avatar_4.jpg" alt="avatar" height="50px" width="50px">
-              <div class="d-flex flex-column">
-                <p class="card-title mb-1">Вениамин Редакторович</p>
-                <p class="small text-muted mg-reset">Онлайн</p>
-              </div>
+      </section>
+      <section class="col-md-7 col-lg-8 pd-reset bg-white d-none d-md-flex flex-column">
+        <header class="header-chat d-flex justify-content-start align-items-center border-bottom w-100">
+          <div class="d-flex flex-row"><img class="mr-3" src="./images/avatar_4.jpg" alt="avatar" height="50px" width="50px">
+            <div class="d-flex flex-column">
+              <p class="card-title mb-1">Вениамин Редакторович</p>
+              <p class="small text-muted mg-reset">Онлайн</p>
             </div>
-          </header>
-          <div class="container scrollbar chat-height">
-            <div class="pd-container">
-              <div class="d-flex align-items-start mb-3">
-                <div class="message-width w-md-100 d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px">
-                  <div class="card card-body rounded-xl">
-                    <p class="card-title">Вениамин Редакторович</p>
-                    <p class="cardt-text text-muted">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае ипотом   в     магазин. Тебе что-то захватить?</p>
-                    <p class="small text-muted mg-reset">8 минут назад</p>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-end">
-                <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px">
-                  <div class="card card-body rounded-xl bg-primary text-light">
-                    <p class="card-text">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
-                    <p class="small mg-reset border-top pt-1">5 минут назад</p>
-                  </div>
+          </div>
+        </header>
+        <div class="container scrollbar chat-height">
+          <div class="pd-container">
+            <div class="d-flex align-items-start mb-3">
+              <div class="d-flex align-items-end message-width"><img class="d-none d-md-block rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px">
+                <div class="card card-body rounded-xl">
+                  <p class="card-title font-weight-bold">Вениамин Редакторович</p>
+                  <p class="cardt-text text-muted">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае ипотом в         магазин. Тебе что-то захватить?</p>
+                  <p class="small text-muted mg-reset">8 минут назад</p>
                 </div>
               </div>
             </div>
-            <div class="pd-container d-flex flex-column">
-              <div class="d-flex align-items-start mb-3 order-1">
-                <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px">
-                  <div class="card card-body rounded-xl">
-                    <p class="card-title">Вениамин Редакторович</p>
-                    <p class="cardt-text text-muted">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, атам    это условие</p>
-                    <p class="small text-muted mg-reset">3 минут назад</p>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-end order-0 mb-3">
-                <div class="message-width d-flex align-items-end"><img class="rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px">
-                  <div class="card card-body rounded-xl bg-primary text-light">
-                    <p class="card-text">O_o</p>
-                    <p class="small mg-reset border-top pt-1">Только что</p>
-                  </div>
+            <div class="d-flex justify-content-xl-end">
+              <div class="d-flex align-items-end message-width"><img class="d-none d-md-block rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px">
+                <div class="card card-body rounded-xl bg-primary text-light">
+                  <p class="card-text">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</p>
+                  <p class="small mg-reset border-top pt-1">5 минут назад</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="d-flex justify-content-between align-items-center border-top">
-              <p class="text-muted">Напишите сообщение...</p>
-              <div class="rounded-pill bg-primary my-3 w-h-50 d-flex justify-content-center align-items-center"><img class="invert-color" src="./images/icons/cursor.svg" alt="cursor" width="20" height="20"></div>
+          <div class="pd-container">
+            <div class="d-flex justify-content-xl-end mb-3">
+              <div class="message-width d-flex align-items-end"><img class="d-none d-md-block rounded-pill mr-3" src="./images/avatar_1.jpg" alt="avatar" width="50px" height="50px">
+                <div class="card card-body rounded-xl bg-primary text-light">
+                  <p class="card-text">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, атам    это условие</p>
+                  <p class="small mg-reset border-top pt-1">3 минут назад</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-start mb-3">
+              <div class="message-width d-flex align-items-end"><img class="d-none d-md-block rounded-pill mr-3" src="./images/avatar_4.jpg" alt="avatar" width="50px" height="50px">
+                <div class="card card-body rounded-xl">
+                  <p class="card-title font-weight-bold">Вениамин Редакторович</p>
+                  <p class="cardt-text text-muted">O_O</p>
+                  <p class="small text-muted mg-reset">Только что</p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center border-top">
+            <p class="text-muted">Напишите сообщение...</p>
+            <div class="rounded-pill bg-primary my-3 w-h-50 d-flex justify-content-center align-items-center"><img class="invert-color" src="./images/icons/cursor.svg" alt="cursor" width="20" height="20"></div>
+          </div>
+        </div>
       </section>
     </div>
   </body>

@@ -1,2 +1,6 @@
-section#nav-chat.container.pd-container.contacts.tab-pane.tab-pane.fade(role="tabpanel" aria-labelledby="nav-chat-tab")
-    include chats.pug
+section#nav-chat.contacts.tab-pane.tab-pane.fade(role="tabpanel" aria-labelledby="nav-chat-tab")
+    include header-chat
+    .scrollbar.chat-height
+        include chats.pug
+    .position-relative.footer-left-chat
+        include footer-chat.pug

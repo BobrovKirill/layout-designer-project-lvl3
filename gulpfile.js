@@ -80,15 +80,10 @@ function clean(params) {
   return del(path.clean);
 }
 
-function Js(params){
-  return gulp.src(path.src.js)
-      .pipe(gulp.dest(path.build.js))
-}
 
-let build = gulp.series(clean, gulp.parallel(pugToHtml, css, Js, img));
+let build = gulp.series(clean, gulp.parallel(pugToHtml, css, img));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-exports.Js = Js;
 exports.img = img;
 exports.pugToHtml = pugToHtml;
 exports.css = css;

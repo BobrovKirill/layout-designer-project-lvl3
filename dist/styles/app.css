@@ -7786,7 +7786,7 @@ nav {
   height: 91px; }
 
 .message-width {
-  width: calc(100% - (2 * 5rem)); }
+  max-width: 558px; }
 
 .w-h-50 {
   width: 50px;
@@ -7794,3 +7794,8 @@ nav {
 
 .invert-color {
   filter: invert(1); }
+
+.footer-left-chat {
+  bottom: 72px;
+  z-index: 1000;
+  background: white; }
