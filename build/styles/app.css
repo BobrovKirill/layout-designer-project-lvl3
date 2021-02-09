@@ -7890,10 +7890,10 @@ nav {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08); }
 
 .main-height {
-  height: calc(100vh - (55px + 2 * 2rem)); }
+  height: calc(100vh - (50px + 2 * 2rem)); }
 
 .chat-height {
-  height: calc(100vh - (71px + 87px + 2 * 2rem)); }
+  height: calc(100vh - (76px + 87px + 2 * 2rem)); }
 
 .header-chat {
   height: 91px; }
