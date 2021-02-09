@@ -1,7 +1,7 @@
 const { extend } = require('jquery');
 
 
-let projectFolder = 'dist';
+let projectFolder = 'build';
 let sourceFolder = 'app';
 
 let path = {
