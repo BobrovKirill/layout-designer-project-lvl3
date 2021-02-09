@@ -21,23 +21,7 @@ nav {
   border-radius: 1rem;
 }
 
-@mixin hide-scrollbar() {
-  & {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-};
-
-.scrollbar {
-  @include hide-scrollbar();
-}
 
 .card {
   color: black;
@@ -47,6 +31,9 @@ nav {
       text-decoration: none;
   }
 };
+.shadow-box {
+  box-shadow: (0 2px 2px rgba(0, 0, 0, 0.08));
+}
 
 .main-height {
   height: calc(100vh - (75px + 2 * 3rem));
